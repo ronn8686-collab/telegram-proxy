@@ -14,9 +14,9 @@ export default async function handler(request) {
       body: body
     });
 
-    return new Response("OK", { status: 200 });
+    return new Response("OK");
 
   } catch (err) {
-    return new Response("ERROR", { status: 200 });
+    return new Response("ERROR");
   }
 }
